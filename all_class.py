@@ -10,7 +10,7 @@ class Cell(pygame.sprite.Sprite):
         self.image = pygame.surface.Surface(size)
         self.rect = self.image.get_rect(topleft = pos)
         self.image.fill(colour)
-        self.font = pygame.font.Font("/Users/Kids/Documents/Programming/python_personal/oop_mine_sweeper/assests/Pixeltype.ttf", 30)
+        self.font = pygame.font.Font("Pixeltype.ttf", 30)
 
     def show_num(self, num, screen):
         self.num_txt = self.font.render(str(num), False, "#BBBBBB")
