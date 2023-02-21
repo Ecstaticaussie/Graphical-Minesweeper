@@ -19,11 +19,14 @@ while True:
             pygame.quit()
             sys.exit()
 
+    #This places the screen and all the cells
     screen.fill('white')
     the_game.cells_background.draw(screen)
     the_game.cells.draw(screen)
 
+    #Continously updates the state of the game
     the_game.update(screen)
 
+    #This updates the window a set number of times per second - fps
     pygame.display.update()
     clock.tick(60)
